@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+body {
+    font-family: "Montserrat", sans-serif;
+  }
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+.top {
+    height: 1024px;
+    background-image: url(imgs/BGITop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 217px;
+    &__header {
+        color: #FFF;
+        font-size: 64px;
+        font-weight: 700;
+    }
+    &__text {
+        color: #FFF;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 32px;
+        display: block;
+        width: 481px;
+        margin-top: 32px;
+        &_bold {
+            color: #FFF;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 32px;
+        }
+    }
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 44px;
+        width: 234px;
+        height: 48px;
+        border-radius: 30px;
+        background: #9C0332;
+        box-sizing: border-box;
+        border: none;
+        color: #FFF;
+        font-size: 18px;
+        font-weight: 400;
+        &:hover {
+            background: #EB443F;
+        }
+    }
+}
+.games {
+    height: 556px;
+    background: #000915;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    padding-top: 128px;
+    gap: 32px;
+    &__item {
+        height: 300px;
+        grid-column: span 4;
+        display: flex;
+        border-radius: 18px;
+        border: none;
+        background-size: cover;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        padding-left: 32px;
+        padding-bottom: 32px;
+        box-sizing: border-box;
+        color: #FFF;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 32px;
+        &:hover {
+            border: 3px solid #44D2FF;
+        }
+        &-1 {
+            background-image: url(imgs/Game1.jpg);
+        }
+        &-2 {
+            background-image: url(imgs/Game2.jpg);
+        }
+        &-3 {
+            background-image: url(imgs/Game3.jpg);
+        }
+    }
+}
