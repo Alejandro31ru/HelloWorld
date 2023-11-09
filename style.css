@@ -58,6 +58,7 @@ body {
   color: #FFF;
   font-size: 18px;
   font-weight: 400;
+  transition: all 0.3s;
 }
 .top__button:hover {
   background: #EB443F;
