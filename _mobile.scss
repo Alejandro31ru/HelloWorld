@@ -1,0 +1,48 @@
+@media (max-width: 767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .top {
+        height: auto;
+        padding-top: 238px;
+        padding-bottom: 238px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+        background-image: url(imgs/BGITop_mob.jpg);
+        &__header {
+            width: auto;
+            font-size: 32px;
+            text-align: center;
+        }
+        &__text {
+            margin: 0;
+            width: auto;
+            text-align: center;
+        }
+        &__button {
+            margin: 0;
+        }
+    }
+    .games {
+        height: 1221px;
+        gap: 32px;
+        padding-top: 128px;
+        padding-bottom: 128px;
+        box-sizing: border-box;
+        grid-template-columns: repeat(4, 1fr);
+        &__item {
+            &-1 {
+                background-image: url(imgs/Game1_mob.jpg);
+            }
+            &-2 {
+                background-image: url(imgs/Game2_mob.jpg);
+            }
+            &-3 {
+                background-image: url(imgs/Game3_mob.jpg);
+            }
+        }
+    }
+}
