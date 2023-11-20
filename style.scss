@@ -20,6 +20,7 @@ body {
     background-position: center;
     padding-top: 217px;
     &__header {
+        width: 768px;
         color: #FFF;
         font-size: 64px;
         font-weight: 700;
@@ -70,7 +71,7 @@ body {
         height: 300px;
         grid-column: span 4;
         display: flex;
-        border-radius: 18px;
+        border-radius: 16px;
         border: none;
         background-size: cover;
         flex-direction: column-reverse;
@@ -98,3 +99,4 @@ body {
         }
     }
 }
+@import 'mobile';
