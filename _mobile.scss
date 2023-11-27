@@ -18,6 +18,7 @@
             text-align: center;
         }
         &__text {
+            font-size: 14px;
             margin: 0;
             width: auto;
             text-align: center;
@@ -43,6 +44,28 @@
             &-3 {
                 background-image: url(imgs/Game3_mob.jpg);
             }
+        }
+    }
+    .seasons {
+        grid-template-columns: repeat(4, 1fr);
+        &__content {
+            grid-column: span 4;
+            margin-top: 51px;
+            margin-bottom: 0px;
+            align-items: center;
+            &_header {
+                font-size: 32px;
+            }
+            &_text {
+                text-align: center;
+                font-size: 14px;
+                line-height: 22px;
+            }
+        }
+        &__logo {
+            grid-column: span 4;
+            margin-top: 64px;
+            margin-bottom: 85px;
         }
     }
 }

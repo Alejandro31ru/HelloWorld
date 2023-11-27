@@ -77,7 +77,7 @@ body {
   height: 300px;
   grid-column: span 4;
   display: flex;
-  border-radius: 16px;
+  border-radius: 20px;
   border: none;
   background-size: cover;
   flex-direction: column-reverse;
@@ -89,6 +89,8 @@ body {
   font-size: 24px;
   font-weight: 600;
   line-height: 32px;
+  transition: all 0.3s;
+  border: 3px solid #000915;
 }
 .games__item:hover {
   border: 3px solid #44D2FF;
@@ -101,6 +103,51 @@ body {
 }
 .games__item-3 {
   background-image: url(imgs/Game3.jpg);
+}
+
+.seasons {
+  background-color: #000915;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 32px;
+}
+.seasons__content {
+  grid-column: 1/-7;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  margin-top: 282px;
+  margin-bottom: 282px;
+}
+.seasons__content_header {
+  color: #FFF;
+  font-size: 48px;
+  font-weight: 700;
+}
+.seasons__content_text {
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
+}
+.seasons__content_button {
+  width: 234px;
+  height: 48px;
+  border-radius: 30px;
+  background: #9C0332;
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 400;
+  transition: all 0.3s;
+}
+.seasons__content_button:hover {
+  background: #EB443F;
+}
+.seasons__logo {
+  grid-column: 8/-1;
+  margin-top: 233px;
+  margin-bottom: 233px;
 }
 
 @media (max-width: 767px) {
@@ -124,6 +171,7 @@ body {
     text-align: center;
   }
   .top__text {
+    font-size: 14px;
     margin: 0;
     width: auto;
     text-align: center;
@@ -147,5 +195,27 @@ body {
   }
   .games__item-3 {
     background-image: url(imgs/Game3_mob.jpg);
+  }
+  .seasons {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .seasons__content {
+    grid-column: span 4;
+    margin-top: 51px;
+    margin-bottom: 0px;
+    align-items: center;
+  }
+  .seasons__content_header {
+    font-size: 32px;
+  }
+  .seasons__content_text {
+    text-align: center;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .seasons__logo {
+    grid-column: span 4;
+    margin-top: 64px;
+    margin-bottom: 85px;
   }
 }/*# sourceMappingURL=style.css.map */
