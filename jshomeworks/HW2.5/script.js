@@ -25,11 +25,11 @@ minNums();
 let n = prompt('введите число');
 function checkNumbers() {
     if (n % 2 === 0) {
-        console.log('Число чётное');
+        return console.log('Число чётное');
     } else if (n % 2 === 1) {
-        console.log('Число нечётное');
+        return console.log('Число нечётное');
     } else {
-        console.log('С каких пор числа состоят из букв?');
+        return console.log('С каких пор числа состоят не из цифр?');
     }
 }
 checkNumbers(n);
