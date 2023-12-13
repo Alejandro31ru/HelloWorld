@@ -29,3 +29,19 @@ function gameSeasons() {
     }
 }
 // gameSeasons();
+
+function guessTheWords() {
+    const words = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+    words.sort(() => Math.random() - 0.5);
+    alert(`Запомни последовательность слов: ${words}`);
+    let firstWord = prompt('Какое слово было первым из спикска?');
+    let lastWord = prompt('Какое слово было последним из спикска?');
+    if (words[0].toLowerCase() === firstWord.toLowerCase() && words[words.length - 1].toLowerCase() === lastWord.toLowerCase()) {
+        alert('Молодец! Оба два угадал!');
+    } else if (words[0].toLowerCase() === firstWord.toLowerCase() || words[words.length - 1].toLowerCase() === lastWord.toLowerCase()) {
+        alert('Вы были близки к победе!');
+    } else {
+        alert('Увы и ах...с памятью прям бЯда...');
+    }
+}
+// guessTheWords();

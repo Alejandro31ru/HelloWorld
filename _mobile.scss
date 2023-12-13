@@ -68,4 +68,28 @@
             margin-bottom: 85px;
         }
     }
+    .words {
+        grid-template-columns: repeat(4, 1fr);
+        &__logo {
+            order: 2;
+            grid-column: span 4;
+            margin-top: 64px;
+            margin-bottom: 90px;
+        }
+        &__content {
+            order: 1;
+            grid-column: span 4;
+            margin-top: 51px;
+            margin-bottom: 0px;
+            align-items: center;
+            &_header {
+                font-size: 32px;
+            }
+            &_text {
+                text-align: center;
+                font-size: 14px;
+                line-height: 22px;
+            }
+        }
+    }
 }
